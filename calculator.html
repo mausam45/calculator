@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link  rel="stylesheet" href="./style.css">
+    <style>
+     body{
+     
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+    background: rgb(215, 210, 210);
+  
+   
+    }
+    table {
+       width: 200px;
+       height: 350px;
+        border: none;
+        border-radius: 50px;
+        background:transparent;
+        
+    }
+   input{
+        margin: 10px;
+        padding: 10px; 
+         width: 70px;
+        height: 70px; 
+        border:1px solid black;
+        box-shadow: 0px 3px 15px  ;
+        border-radius: 50px;
+        background-color:transparent;
+        font-size: 40px;
+        text-align: right;
+        cursor: pointer;
+        position:relative ;
+    }
+    input ::placeholder {
+      color: #ffffff;
+    } 
+    .a{
+        width: 320px;
+        height: 80px;
+        border: none;
+        
+    }
+    
+    button{
+        width: 60px;
+        height: 50px;
+        border: none;
+        /* margin: 10px; */
+        border-radius: 50%;
+        background: transparent;
+        color: white;
+        font-size: 20px;
+        text-align: right;
+        box-shadow: -8px -8px 15px rgba(255,255,255,0.1);
+        cursor: pointer;
+        
+    }
+    div{
+        width: 377px;
+        height: 582px;
+        border: 1px solid black;
+        margin-left: 550px;
+        border-radius: 50px;
+        box-shadow: 8px 9px 15px rgba(255,255,255,0.1);
+        background-color: rgb(181, 166, 166);
+       margin-top:70px ;
+      
+    }
+    .flex{
+        
+        position: absolute;
+        list-style: none;
+        float: right;
+        right: 50px;
+       top: 8px;
+        
+    }
+    .nav{position: absolute;
+        list-style: none;
+       float: left;
+        top: 5px;
+    }
+    
+    
+      </style>
+</head>
+<body> 
+    <p id="d"></p>
+   <ul>
+    <li class="flex"><a href="http://127.0.0.1:5500/login.html">LOGIN</a></li>
+    <li class="nav"><a href="http://127.0.0.1:5500/home.html">HOME</a></li>
+   </ul>
+    <div>
+   <form name="show">
+     <input class="a" type="text" name="text" class="text">
+    </form>
+   <table>
+        <tr>
+            <td><input type="button" value ="C" onclick ="document.getElementById= document.show.text.value=''"></td>
+            <td><input type="button" value ="B" onclick ="document.getElementById=Backspace()"></td>
+            <td><input type="button" value ="%" onclick ="document.getElementById=insert('%')"></td>
+            <td><input type="button" value ="/" onclick ="document.getElementById=insert('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value ="7" onclick ="document.getElementById=insert('7')"></td>
+            <td><input type="button" value ="8" onclick ="document.getElementById=insert('8')"></td>
+            <td><input type="button" value ="9" onclick ="document.getElementById=insert('9')"></td>
+            <td><input type="button" value ="*" onclick ="document.getElementById=insert('*')"></td> 
+        </tr>
+        <tr>
+            <td><input type="button" value ="4" onclick ="document.getElementById=insert('4')"></td>
+            <td><input type="button" value ="5" onclick ="document.getElementById=insert('5')"></td>
+            <td><input type="button" value ="6" onclick ="document.getElementById=insert('6')"></td>
+            <td><input type="button" value ="-" onclick ="document.getElementById=insert('-')"></td> 
+        </tr>
+        <tr >
+            <td><input type="button" value ="1" onclick ="document.getElementById=insert('1')"></td>
+            <td><input type="button" value ="2" onclick ="document.getElementById=insert('2')"></td>
+            <td><input type="button" value ="3" onclick ="document.getElementById=insert('3')"></td>
+            <td><input type="button" value ="+" onclick ="document.getElementById=insert('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button"  value ="0" onclick ="document.getElementById=insert('0')"></td>
+            <td><input type="button" value ="." onclick ="document.getElementById=insert('.')"></td>
+            <td><input type="button"  value ="=" onclick ="document.getElementById=equal()"></td>
+            
+        </tr>
+        
+    </table>
+    
+</div>
+    <script
+          src="./script.js">
+        </script>
+
+    
+</body>
+</html>
